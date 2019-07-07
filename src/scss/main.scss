@@ -6,14 +6,48 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
+
+
 body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "content . side"
+    "footer footer footer";
+  grid-template-columns: 1fr 100px 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-gap: 0.1rem;
   color: $yellow;
   background: $violet;
 }
+
 .header__title--red {
   color: red;
+}
+
+.navigation {
+  grid-area: header;
+  &__list {
+    display: flex;
+    justify-items: center;
+  }
+  &__item {
+    display: block;
+  }
+
+  &__link {
+    display: block;
+  }
+}
+.test {
+  grid-area: footer;
+}
+.test2 {
+  grid-area: content;
 }
