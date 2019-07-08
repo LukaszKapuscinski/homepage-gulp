@@ -2,14 +2,14 @@
 
 # homepage-gulp
 
-######Projekt na potrzeby kursu:
+###### Projekt na potrzeby kursu:
 ## Co Ten Frontend
 
 ###### autor:
 ## Lukasz Kapuściński
 
 
-######ważne komendy
+###### ważne komendy
 ```
 `npm install -g gulp-cli`
 
