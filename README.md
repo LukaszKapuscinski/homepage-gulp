@@ -8,7 +8,7 @@
 ###### autor:
 ## Lukasz Kapuściński
 
-**Użyte technologie**
+**Użyte technologie:**
 
 - HTML
 - CSS
