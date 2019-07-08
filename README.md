@@ -8,7 +8,7 @@
 ###### autor:
 ## Lukasz Kapuściński
 
-Zapraszam na moją stronę : [Link do strony](https://lukaszkapuscinski.github.io/homepage-gulp/)
+Zapraszam na moją stronę : [>>>Link do strony<<<](https://lukaszkapuscinski.github.io/homepage-gulp/)
 
 **Użyte technologie:**
 
