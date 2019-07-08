@@ -2,15 +2,15 @@
 
 # homepage-gulp
 
-### Projekt na potrzeby kursu:
+######Projekt na potrzeby kursu:
 ## Co Ten Frontend
 
-### autor:
+###### autor:
 ## Lukasz Kapuściński
 
 
-#### ważne komendy
-
+######ważne komendy
+```
 `npm install -g gulp-cli`
 
 `npm install`
@@ -18,4 +18,5 @@
 `gulp`
 
 To publish your page using github pages use `npm run deploy`
+```
 
