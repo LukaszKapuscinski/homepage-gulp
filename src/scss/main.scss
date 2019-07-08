@@ -16,38 +16,51 @@ html {
 
 body {
   display: grid;
-  grid-template-areas:
-    "header header header"
-    "content . side"
-    "footer footer footer";
-  grid-template-columns: 1fr 100px 1fr;
-  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-columns: repeat(12, minmax(10px, 1fr));
+  grid-template-rows: repeat(8, minmax(10px, 1fr));;
   grid-gap: 0.1rem;
   color: $yellow;
   background: $violet;
 }
-
+.header__button {
+  grid-area: 3/ 2 / 4/ 6;
+ 
+}
 .header__title--red {
   color: red;
 }
+.logo {
+  grid-area: 2/ 2 / 3/ 3;
+  display: flex;
+  justify-items: flex-end;
+  width: 100%;
+  max-width: 200px;
+}
 
 .navigation {
-  grid-area: header;
+  grid-area: 2/ 5/ 3/ 8;
+  align-items: center;
+
   &__list {
     display: flex;
-    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+  
   }
   &__item {
-    display: block;
+    list-style: none;
+    align-items: center;
+    display: 1;
   }
 
   &__link {
-    display: block;
+    display: 1;
   }
 }
-.test {
-  grid-area: footer;
+.footer {
+  grid-area: 7/ 2 / 9/ 6;
 }
-.test2 {
-  grid-area: content;
+.content {
+  grid-area: 5/ 5 / 7/ 8;
 }

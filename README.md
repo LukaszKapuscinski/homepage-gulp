@@ -8,8 +8,19 @@
 ###### autor:
 ## Lukasz Kapuściński
 
+** Użyte technologie **
+
+- HTML
+- CSS
+- JavaScript
+- Git / GitHub
+- Node JS
+- Gulp
+- SaSS / SCSS
+- npm
 
 ###### ważne komendy
+
 ```
 `npm install -g gulp-cli`
 
