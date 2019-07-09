@@ -37,9 +37,9 @@ body {
   max-width: 200px;
 }
 
-.navigation {
-  grid-area: 2/ 8/ 3/ 12;
-  align-items: flex-end;
+.header {
+  grid-area: 1/ 1/ 2/ 13;
+  background-color: #555;
 
   &__list {
     display: flex;
