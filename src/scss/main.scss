@@ -63,7 +63,9 @@ body {
   }
 }
 .footer {
-  grid-area: 7/ 2 / 9/ 6;
+  grid-area: 8/ 1 / 9/ 13;
+  background-color: #222;
+  margin: 0;
 }
 .content {
   grid-area: 5/ 5 / 7/ 8;
