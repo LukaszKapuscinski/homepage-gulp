@@ -6,7 +6,7 @@
 ## Co Ten Frontend
 
 ###### autor:
-## Lukasz Kapuściński
+## Łukasz Kapuściński
 
 Zapraszam na moją stronę : [>>>Link do strony<<<](https://lukaszkapuscinski.github.io/homepage-gulp/)
 

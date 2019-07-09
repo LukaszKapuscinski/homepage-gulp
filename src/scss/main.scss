@@ -38,24 +38,28 @@ body {
 }
 
 .navigation {
-  grid-area: 2/ 5/ 3/ 8;
-  align-items: center;
+  grid-area: 2/ 8/ 3/ 12;
+  align-items: flex-end;
 
   &__list {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
     height: 30px;
   
   }
   &__item {
     list-style: none;
-    align-items: center;
+    align-items: flex-end;
     display: 1;
   }
 
   &__link {
-    display: 1;
+    padding:10px 30px;
+    color: $yellow;
+    text-decoration: none;
+    background-color: #111;
+    
   }
 }
 .footer {
