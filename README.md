@@ -31,5 +31,9 @@ Zapraszam na moją stronę : [>>>Link do strony<<<](https://lukaszkapuscinski.gi
 `gulp`
 
 To publish your page using github pages use `npm run deploy`
+
+Zapamietywanie hasła w repozytorium:
+git config credential.helper store
+git push
 ```
 
