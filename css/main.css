@@ -320,42 +320,80 @@ html {
 body {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header header header" "content . side" "footer footer footer";
-  -ms-grid-columns: 1fr 0.1rem 100px 0.1rem 1fr;
-  grid-template-columns: 1fr 100px 1fr;
-  -ms-grid-rows: 1fr 0.1rem 3fr 0.1rem 1fr;
-  grid-template-rows: 1fr 3fr 1fr;
+  -ms-grid-columns: (minmax(10px, 1fr))[12];
+  grid-template-columns: repeat(12, minmax(10px, 1fr));
+  -ms-grid-rows: (minmax(10px, 1fr))[8];
+  grid-template-rows: repeat(8, minmax(10px, 1fr));
   grid-gap: 0.1rem;
   color: #F9C802;
   background: #2D2241; }
 
+.header__button {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: 3/ 2 / 4/ 6; }
+
 .header__title--red {
   color: red; }
 
-.navigation {
+.logo {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2/ 2 / 3/ 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: flex-end;
+  width: 100%;
+  max-width: 200px; }
+
+.header {
   -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-area: header; }
-  .navigation__list {
+  -ms-grid-column-span: 12;
+  grid-area: 1/ 1/ 2/ 13;
+  background-color: #555; }
+  .header__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-items: center; }
-  .navigation__item {
-    display: block; }
-  .navigation__link {
-    display: block; }
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: 30px; }
+  .header__item {
+    list-style: none;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    display: 1; }
+  .header__link {
+    padding: 10px 30px;
+    color: #F9C802;
+    text-decoration: none;
+    background-color: #111; }
 
-.test {
+.footer {
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-area: 8/ 1 / 9/ 13;
+  background-color: #222;
+  margin: 0; }
+
+.content {
   -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-area: footer; }
-
-.test2 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: content; }
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-area: 5/ 5 / 7/ 8; }
 
 /*# sourceMappingURL=main.css.map */
