@@ -1,7 +1,6 @@
 @import "_normalize";
 @import "_variables";
 
-
 html {
   box-sizing: border-box;
 }
@@ -17,49 +16,57 @@ html {
 body {
   display: grid;
   grid-template-columns: repeat(12, minmax(10px, 1fr));
-  grid-template-rows: repeat(8, minmax(10px, 1fr));;
+  grid-template-rows: repeat(8, minmax(10px, 1fr));
   grid-gap: 0.1rem;
   color: $yellow;
   background: $violet;
+  min-height: 100vh;
 }
-.header__button {
-  grid-area: 3/ 2 / 4/ 6;
- 
+.header {
+  grid-area: 1/ 1/ 2/ 13;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #ddd;
+  &__button {
+    grid-area: 3/ 2 / 4/ 6;
+  }
+  &__title--red {
+    color: red;
+  }
 }
-.header__title--red {
-  color: red;
-}
+
 .logo {
-  grid-area: 2/ 2 / 3/ 3;
+  grid-area: 1/ 2 / 2/ 3;
   display: flex;
   justify-items: flex-end;
   width: 100%;
   max-width: 200px;
+  z-index: 5;
 }
 
-.header {
-  grid-area: 1/ 1/ 2/ 13;
-  background-color: #555;
+.navigation {
+  background-color: pink;
+  justify-content: space-around;
 
   &__list {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     height: 30px;
-  
+    align-content: center;
+    background-color: red;
   }
+
   &__item {
     list-style: none;
-    align-items: flex-end;
-    display: 1;
+    background-color: green;
   }
 
   &__link {
-    padding:10px 30px;
+    padding: 10px 30px;
     color: $yellow;
     text-decoration: none;
     background-color: #111;
-    
   }
 }
 .footer {
@@ -69,4 +76,13 @@ body {
 }
 .content {
   grid-area: 5/ 5 / 7/ 8;
+}
+
+@media (max-width: 640px) {
+  body {
+    background: #fff;
+  }
+  .footer {
+    background: #ddd;
+  }
 }
