@@ -3,6 +3,8 @@
 
 html {
   box-sizing: border-box;
+  margin: 0;
+  padding:0;
 }
 
 *,
@@ -11,21 +13,17 @@ html {
   box-sizing: inherit;
 }
 
-
-
 body {
   display: grid;
   grid-template-columns: repeat(12, minmax(10px, 1fr));
-  grid-template-rows: repeat(8, minmax(10px, 1fr));
-  grid-gap: 0.1rem;
+  grid-template-rows: repeat(auto, minmax(10px, 1fr));
   color: $yellow;
   background: $violet;
   min-height: 100vh;
 }
 .header {
-  grid-area: 1/ 1/ 2/ 13;
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-area: 1/1/2/13;
   background-color: #ddd;
   &__button {
     grid-area: 3/ 2 / 4/ 6;
@@ -37,7 +35,7 @@ body {
 
 .logo {
   grid-area: 1/ 2 / 2/ 3;
-  display: flex;
+  display: grid;
   justify-items: flex-end;
   width: 100%;
   max-width: 200px;
@@ -45,16 +43,19 @@ body {
 }
 
 .navigation {
-  background-color: pink;
-  justify-content: space-around;
-
+  display: grid;
+  background-color: blue;
+  
+  grid-area: 1/ 7 / 2/ 13;
+  
   &__list {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    height: 30px;
-    align-content: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
     background-color: red;
+  
   }
 
   &__item {
@@ -63,7 +64,8 @@ body {
   }
 
   &__link {
-    padding: 10px 30px;
+    padding: 10px 10px;
+    margin: 5px;
     color: $yellow;
     text-decoration: none;
     background-color: #111;
