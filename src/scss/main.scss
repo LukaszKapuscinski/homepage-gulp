@@ -28,7 +28,7 @@ body {
   margin: 0;
 
   &__button {
-    grid-area: 8/ 3/ 9/ 4;
+    
     margin-right: 10px;
     z-index: 5;
   }
@@ -40,12 +40,19 @@ body {
 
   &__header {
     font-family: 'Roboto Slab', serif;
-    grid-area: 8/ 11 / 9/ 12;
+    flex-basis: 100%;
+  text-align: center;
     margin-left: 10px;
   }
 
   &__title--red {
     color: red;
+  }
+  &__section {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -66,8 +73,8 @@ body {
 
 .navigation {
   background-color: blue;
-  display: grid;
-  grid-area: 1/ 7 / 2/ 13;
+  display: flex;
+  
 
   &__icon {
     margin-right: 10px;
