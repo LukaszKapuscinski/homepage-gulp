@@ -36,4 +36,7 @@ Zapamietywanie hasła w repozytorium:
 git config credential.helper store
 git push
 ```
-
+Wyjątek do firewall ( w terminalu jakp admin):
+'''
+netsh advfirewall firewall add rule name="TCP Port 3000" dir=in action=allow protocol=TCP localport=3000
+'''
