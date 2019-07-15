@@ -404,8 +404,10 @@ body {
   .navigation__item {
     display: block;
     background-color: green;
+    border-radius: 10px;
     list-style: none;
     margin-right: 3px;
+    line-height: 30px;
     text-align: center;
     text-justify: auto; }
   .navigation__list {
@@ -433,8 +435,7 @@ body {
     height: 100%;
     margin: auto;
     padding: 10px;
-    width: 140px;
-    height: 30px; }
+    width: 140px; }
 
 .week {
   background-color: green;
