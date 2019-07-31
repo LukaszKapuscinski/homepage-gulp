@@ -22,7 +22,7 @@ body {
 }
 
 .footer {
-  grid-area: 8/ 1 / 9/ 13;
+  grid-area: 12/ 1 / 13/ 13;
   background-color: #222;
   margin: 0;
 
@@ -80,8 +80,6 @@ body {
   display: flex;
   justify-content: flex-end;
   
-
-
   &__icon {
     margin-right: 10px;
   }
@@ -130,7 +128,7 @@ body {
 
 .week {
   background-color: green;
-  display: block;
+  display: flex;
   margin: 5px 0;
 
   &__content {
@@ -156,16 +154,9 @@ body {
   &__section {
     display: flex;
   }
-
-  &--week1{
-    
-  }
-
-  &--week2 {
-    display: grid;
-    grid-area: 7/2/8/12;
-  }
 }
+ 
+
 
 
 
