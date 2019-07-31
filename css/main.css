@@ -329,11 +329,11 @@ body {
   min-height: 100vh; }
 
 .footer {
-  -ms-grid-row: 8;
+  -ms-grid-row: 12;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 12;
-  grid-area: 8/ 1 / 9/ 13;
+  grid-area: 12/ 1 / 13/ 13;
   background-color: #222;
   margin: 0; }
   .footer__button {
@@ -439,7 +439,9 @@ body {
 
 .week {
   background-color: green;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 5px 0; }
   .week__content {
     margin: 0;
@@ -458,14 +460,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  .week--week2 {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-row: 7;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 10;
-    grid-area: 7/2/8/12; }
 
 @media (max-width: 640px) {
   body {
