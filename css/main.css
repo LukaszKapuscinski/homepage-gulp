@@ -328,6 +328,14 @@ body {
   grid-template-columns: repeat(12, minmax(10px, 1fr));
   min-height: 100vh; }
 
+.double-row-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 900px; }
+
 .footer {
   -ms-grid-row: 12;
   -ms-grid-row-span: 1;
@@ -407,6 +415,7 @@ body {
     border-radius: 10px;
     list-style: none;
     margin-right: 3px;
+    margin-bottom: 5px;
     line-height: 30px;
     text-align: center;
     text-justify: auto; }
@@ -424,7 +433,9 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     height: 100%;
-    width: 50%; }
+    width: 1300px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   .navigation__link {
     background-color: #111;
     border-radius: 10px;
@@ -439,16 +450,16 @@ body {
 
 .week {
   background-color: green;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   margin: 5px 0; }
   .week__content {
     margin: 0;
     padding: 30px;
     width: 40%; }
   .week__header {
-    margin-left: 100px; }
+    width: 100%;
+    margin: 10px 100px;
+    padding: 40px 0 20px; }
   .week__list {
     margin: 0 40px 0 70px;
     padding: 30px;
