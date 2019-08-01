@@ -20,6 +20,11 @@ body {
   grid-template-columns: repeat(12, minmax(10px, 1fr));
   min-height: 100vh;
 }
+.double-row-menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+}
 
 .footer {
   grid-area: 12/ 1 / 13/ 13;
@@ -90,6 +95,7 @@ body {
     border-radius: 10px;
     list-style: none;
     margin-right: 3px;
+    margin-bottom: 5px;
    line-height: 30px;
     text-align: center;
     text-justify: auto;
@@ -106,8 +112,8 @@ body {
     padding: 0 100px;
     justify-content: center;
     height: 100%;
-    width: 50%;
-   
+    width: 1300px;
+   flex-wrap: wrap;
   }
 
   &__link {
