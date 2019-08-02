@@ -79,13 +79,9 @@ body {
   max-width: 200px;
   width: 100%;
   z-index: 5;
-
-  @media (max-width: 1550px) {
-    img.logo {
-      display: none;
-    }
+  
   }
-}
+
 
 .main {
   grid-column: 2/12;
@@ -135,6 +131,10 @@ body {
     }
     @media (max-width: 640px) {
       display: none;
+
+      .navigation__list--visible {
+        display: flex;
+      }
     }
   }
 
@@ -151,9 +151,7 @@ body {
     width: 140px;
   }
 }
-.navigation__list--visible {
-  display: flex;
-}
+
 .navigation__switcher {
   border: none;
   background: white;
@@ -195,11 +193,19 @@ body {
     width: 15%;
     min-width: 250px;
   }
+
   &__list-item {
     margin: 10px 0;
     list-style: none;
   }
-
+  &__list-item::before {
+    content: "\f30b";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 16px;
+    margin-right: 10px;
+    color: red;
+  }
   &__section {
     display: flex;
   }
@@ -228,8 +234,4 @@ body {
       min-width: 250px;
     }
   }
-}
-
-.navigation__list--visible {
-  display: flex;
 }

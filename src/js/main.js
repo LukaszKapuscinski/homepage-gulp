@@ -21,9 +21,6 @@ welcome('Lukasz',31);
 // footer
 const button = document.querySelector('.footer__button--js');
 console.log(button);
-
-
-
 button.addEventListener('click', (e)=>{
 const header = document.querySelector('.footer__title--js');
 console.log(header);
@@ -34,9 +31,11 @@ header.classList.toggle('footer__title--red');
 //menu
 
 const navigationSwitcher = document.querySelector('.navigation__switcher--js');
+const navigationList = document.querySelector('.navigation__list--js');
 console.log(navigationSwitcher);
-navigationSwitcher.addEventListener('click', (e) => {
-    const navigationList = document.querySelector('.navigation__list--js');
-    console.log(navigationList);
+console.log(navigationList);
+navigationSwitcher.addEventListener('click', (e)=>{
+    
+    
     navigationList.classList.toggle('navigation__list--visible');
 });
