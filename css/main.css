@@ -335,6 +335,15 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 900px; }
+  @media (max-width: 1550px) {
+    .double-row-menu {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .footer {
   -ms-grid-row: 12;
@@ -345,15 +354,15 @@ body {
   background-color: #222;
   margin: 0; }
   .footer__button {
-    margin-right: 10px;
+    padding: 15px 40px;
+    margin-right: 0 auto;
+    width: 250px;
     z-index: 5; }
   .footer__copyright {
     padding: 20px;
     text-align: center; }
   .footer__header {
-    font-family: 'Roboto Slab', serif;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    font-family: "Roboto Slab", serif;
     text-align: center;
     margin-left: 10px; }
   .footer__title--red {
@@ -362,13 +371,20 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 .header {
   background-color: #ddd;
@@ -388,6 +404,9 @@ body {
   max-width: 200px;
   width: 100%;
   z-index: 5; }
+  @media (max-width: 1550px) {
+    .logo img.logo {
+      display: none; } }
 
 .main {
   -ms-grid-column: 2;
@@ -407,6 +426,11 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
+  @media (max-width: 1550px) {
+    .navigation {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
   .navigation__icon {
     margin-right: 10px; }
   .navigation__item {
@@ -419,6 +443,9 @@ body {
     line-height: 30px;
     text-align: center;
     text-justify: auto; }
+    @media (max-width: 1550px) {
+      .navigation__item {
+        width: 140px; } }
   .navigation__list {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -436,6 +463,15 @@ body {
     width: 1300px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+    @media (max-width: 1550px) {
+      .navigation__list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+    @media (max-width: 640px) {
+      .navigation__list {
+        display: none; } }
   .navigation__link {
     background-color: #111;
     border-radius: 10px;
@@ -447,6 +483,24 @@ body {
     margin: auto;
     padding: 10px;
     width: 140px; }
+
+.navigation__list--visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.navigation__switcher {
+  border: none;
+  background: white;
+  margin-left: 20px;
+  height: 25px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 20; }
+  @media (min-width: 640px) {
+    .navigation__switcher {
+      display: none; } }
 
 .week {
   background-color: green;
@@ -460,10 +514,15 @@ body {
     width: 100%;
     margin: 10px 100px;
     padding: 40px 0 20px; }
+    @media (max-width: 1550px) {
+      .week__header {
+        margin: 0 100px;
+        padding: 40px 0 10px; } }
   .week__list {
     margin: 0 40px 0 70px;
     padding: 30px;
-    width: 15%; }
+    width: 15%;
+    min-width: 250px; }
   .week__list-item {
     margin: 10px 0;
     list-style: none; }
@@ -472,10 +531,29 @@ body {
     display: -ms-flexbox;
     display: flex; }
 
-@media (max-width: 640px) {
-  body {
-    background: #fff; }
-  .footer {
-    background: #ddd; } }
+@media (max-width: 1550px) {
+  img.logo {
+    display: none; } }
+
+@media (max-width: 1100px) {
+  .week__section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .week__content {
+    margin: 0;
+    padding: 25px;
+    width: 95%; }
+  .week__list {
+    margin: 0 40px 0 70px;
+    padding: 30px;
+    width: 90%;
+    min-width: 250px; } }
+
+.navigation__list--visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 /*# sourceMappingURL=main.css.map */
