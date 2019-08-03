@@ -26,12 +26,21 @@ header.classList.toggle('footer__title--red');
 
 //menu
 
-const navigationSwitcher = document.querySelector('.navigation__switcher--js');
-const navigationList = document.querySelector('.navigation__list--js');
-console.log(navigationSwitcher);
-console.log(navigationList);
-navigationSwitcher.addEventListener('click', (e)=>{
-    
-    
-    navigationList.classList.toggle('navigation__list--visible');
+// const navigationSwitcher = document.querySelector('.navigation__switcher--js');
+// const navigationList = document.querySelector('.navigation__list--js');
+// console.log(navigationSwitcher);
+// console.log(navigationList);
+// navigationSwitcher.addEventListener('click', (e)=>{
+//     navigationList.classList.toggle('navigation__list--visible');
+// }); 
+
+
+//menu kopia od Maciek Korsan
+const navigationSwitcher = document.querySelector('.navigation__switcher--js')
+
+navigationSwitcher.addEventListener('click', (e) => {
+  const navigationList = document.querySelector('.navigation__list--js');
+  navigationList.classList.toggle('navigation__list--visible');
+  
 });
+
