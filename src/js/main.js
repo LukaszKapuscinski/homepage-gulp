@@ -44,3 +44,18 @@ navigationSwitcher.addEventListener('click', (e) => {
   
 });
 
+// przechowywanie danych
+
+const person = {
+  name: 'Lukasz',
+  age : '31'
+}
+
+localStorage.setItem('name', 'maciek');
+console.log(person);
+const jsonPerson = JSON.stringify(person);
+console.log(jsonPerson);
+localStorage.setItem('person', jsonPerson);
+const personStringify = localStorage.getItem('person');
+const newPerson = JSON.parse(personStringify);
+console.log(newPerson);
