@@ -130,7 +130,10 @@ body {
       flex-direction: column;
     }
     @media (max-width: $mobile) {
+
+      &__list {
       display: none;
+    }
 
       .navigation__list--visible {
         display: flex;

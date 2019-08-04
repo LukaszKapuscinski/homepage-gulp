@@ -40,3 +40,11 @@ Wyjątek do firewall ( w terminalu jakp admin):
 ```
 netsh advfirewall firewall add rule name="TCP Port 3000" dir=in action=allow protocol=TCP localport=3000
 ```
+
+Tworzenie branchy na github:
+
+`git branch` - sprawdza i wyświetla ilość i nazwy istniejących branchy
+
+`git branch <nazwa> ` tworzy branch o podanej nazwie
+
+`git checkout ` polecenie do przełaczania się pomiędzy branchami np. git checkout master
