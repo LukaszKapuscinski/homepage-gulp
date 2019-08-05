@@ -460,6 +460,11 @@ body {
     width: 1300px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+    @media (max-width: 640px) {
+      .navigation__list--visible {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
     @media (max-width: 1550px) {
       .navigation__list {
         -webkit-box-orient: vertical;
@@ -469,7 +474,7 @@ body {
     @media (max-width: 640px) {
       .navigation__list {
         display: none; }
-        .navigation__list .navigation__list--visible {
+         .navigation__list--visible {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; } }
