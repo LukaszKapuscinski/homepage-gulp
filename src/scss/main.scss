@@ -20,10 +20,12 @@ body {
   grid-template-columns: repeat(12, minmax(10px, 1fr));
   min-height: 100vh;
 }
+
 .double-row-menu {
   display: flex;
   flex-wrap: wrap;
   width: 900px;
+
   @media (max-width: 1550px) {
     flex-direction: column;
     align-items: center;
@@ -57,6 +59,7 @@ body {
   &__title--red {
     color: red;
   }
+
   &__section {
     display: flex;
     flex-direction: column;
@@ -79,20 +82,20 @@ body {
   max-width: 200px;
   width: 100%;
   z-index: 5;
-  
-  }
-
+}
 
 .main {
   grid-column: 2/12;
   flex-direction: column;
 }
 
+
 .navigation {
   background-color: blue;
   height: 100%;
   display: flex;
   justify-content: flex-end;
+
   @media (max-width: $desktop) {
     justify-content: center;
   }
@@ -111,6 +114,7 @@ body {
     line-height: 30px;
     text-align: center;
     text-justify: auto;
+
     @media (max-width: $desktop) {
       width: 140px;
     }
@@ -126,34 +130,48 @@ body {
     height: 100%;
     width: 1300px;
     flex-wrap: wrap;
+
     @media (max-width: $desktop) {
       flex-direction: column;
     }
+
     @media (max-width: $mobile) {
 
-      &__list {
       display: none;
     }
 
-      .navigation__list--visible {
+    &--visible {
+      @media (max-width: $mobile) {
+
         display: flex;
       }
     }
-  }
 
-  &__link {
-    background-color: #111;
-    border-radius: 10px;
-    color: $yellow;
-    display: block;
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    padding: 10px;
-    width: 140px;
+
   }
 }
+
+
+
+
+
+
+
+
+
+&__link {
+  background-color: #111;
+  border-radius: 10px;
+  color: $yellow;
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 10px;
+  width: 140px;
+}
+
 
 .navigation__switcher {
   border: none;
@@ -164,10 +182,12 @@ body {
   top: 16px;
   right: 16px;
   z-index: 20;
+
   @media (min-width: $mobile) {
     display: none;
   }
 }
+
 .week {
   background-color: green;
   display: block;
@@ -184,7 +204,7 @@ body {
     margin: 10px 100px;
     padding: 40px 0 20px;
 
-    @media (max-width:$desktop) {
+    @media (max-width: $desktop) {
       margin: 0 100px;
       padding: 40px 0 10px;
     }
@@ -201,6 +221,7 @@ body {
     margin: 10px 0;
     list-style: none;
   }
+
   &__list-item::before {
     content: "\f30b";
     font-family: "Font Awesome 5 Free";
@@ -209,12 +230,13 @@ body {
     margin-right: 10px;
     color: black;
   }
+
   &__section {
     display: flex;
   }
 }
 
-@media (max-width:$desktop) {
+@media (max-width: $desktop) {
   img.logo {
     display: none;
   }
@@ -225,11 +247,13 @@ body {
     &__section {
       flex-direction: column;
     }
+
     &__content {
       margin: 0;
       padding: 25px;
       width: 95%;
     }
+
     &__list {
       margin: 0 40px 0 70px;
       padding: 30px;
@@ -237,4 +261,13 @@ body {
       min-width: 250px;
     }
   }
+}
+
+@media (max-width: $mobile) {
+  .navigation {
+    &__list {
+      display: none;
+    }
+  }
+  
 }
